@@ -5,15 +5,19 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Dear user, please input a string of parenthesis!");
+        System.out.println("How many people are inside the room?");
 
         Scanner sc = new Scanner(System.in);
-        String p = sc.next();
+        int inRoom = sc.nextInt();
 
-        if (p.length() % 2 == 0) {
-            System.out.println("Parenthesis match, valid!");
+        System.out.println("How many people are still outside?");
+
+        int outside = sc.nextInt();
+
+        if (100 - inRoom < outside) {
+            System.out.println("People in the queue can't fit into the room!");
         } else {
-            System.out.println("Parenthesis doesn't match, invalid!");
+            System.out.println("People in the queue can fit into the room!");
         }
     }
 }
