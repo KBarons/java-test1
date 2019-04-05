@@ -1,0 +1,30 @@
+Answers:
+
+1: b
+
+2: snap install foobar --classic
+   sudo snap connect foobar:hardware-observe core:hardware-observe
+   sudo snap connect foobar:process-control core:process-control
+   sudo snap connect foobar:cups-control core:cups-control
+
+3: d
+
+4: a,c
+
+5: a,b,c
+
+6: b
+
+7: 1
+
+8: 15
+
+9: 3
+
+10: 1
+
+11: true
+
+12: true
+
+13: true
