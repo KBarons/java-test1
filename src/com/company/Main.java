@@ -5,18 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int i = 1, n = 40, t1 = 0, t2 = 1;
-        System.out.print("First " + n + " terms: ");
+        System.out.println("Dear user, please input a string of parenthesis!");
 
-        while (i <= n)
-        {
-            System.out.print(t1 + " + ");
+        Scanner sc = new Scanner(System.in);
+        String p = sc.next();
 
-            int sum = t1 + t2;
-            t1 = t2;
-            t2 = sum;
-
-            i++;
+        if (p.length() % 2 == 0) {
+            System.out.println("Parenthesis match, valid!");
+        } else {
+            System.out.println("Parenthesis doesn't match, invalid!");
         }
     }
 }
